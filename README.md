@@ -28,11 +28,14 @@
 npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--save
 ``` 
 ## vuex简单理解
-> 组件之间通信
+
+> 1,组件之间通信
 >
-> 父子组件至今简单通信可通过props传递，$emit()触发，$on()监听，当然如果你不想用可以用vuex代替
+> 2,父子组件至今简单通信可通过props传递，$emit()触发，$on()监听，当然如果你不想用可以用vuex代替
 >
-> vuex 应用mapActions(调用action.js的方法),mapMutations(调用mutation.js里的方法) ,mapState(获取state状态)
+> 3,vuex 应用mapActions(调用action.js的方法),mapMutations(调用mutation.js里的方法) ,mapState(获取state状态)
+>
+
 ## 生命周期
 #### 生命周期是有先后顺序的.
 
@@ -73,15 +76,15 @@ npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--sav
 >
 
 ## 其他知识点
-> 组件之间，参数至今 注意驼峰命名的规则
+> 1,组件之间，参数至今 注意驼峰命名的规则
 >
-> 个个vue方法的理解，过滤器(filters)，计算属性(computed),自定义方法(methods),观察(watch)
+> 2,vue方法的理解，过滤器(filters)，计算属性(computed),自定义方法(methods),观察(watch)
 >
-> axios 跨域反向代理配置
+> 3,axios 跨域反向代理配置
 >
-> axios post参数，如果后台接受不到，需要处理一下
+> 4,axios post参数，如果后台接受不到，需要处理一下
 >
-> build文件不再根目录，路径配置
+> 5,build文件不再根目录，路径配置
 
 ```
 Vue.prototype.$http = axios;
