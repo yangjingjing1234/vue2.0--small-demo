@@ -25,24 +25,24 @@ npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--sav
 ## 生命周期
 #### 生命周期是有先后顺序的.
 
->父组件：
->beforeCreate(创建前)
->created(已创建)
->beforeMount(安装之前)
->>子组件：
->>beforeCreate
->>created
->>beforeMount
+>* 父组件：
+>* beforeCreate(创建前)
+>* created(已创建)
+>* beforeMount(安装之前)
+>>* 子组件：
+>>* beforeCreate
+>>* created
+>>* beforeMount
 
->父组件：
->beforeDestroy(销毁之前)
->destroyed(销毁之后)
->>子组件：
->>beforeDestroy
->>destroyed
->>mounted 
->父组件：    
->mounted (安装之后)
+>* 父组件：
+>* beforeDestroy(销毁之前)
+>* destroyed(销毁之后)
+>>* 子组件：
+>>* beforeDestroy
+>>* destroyed
+>>* mounted 
+>* 父组件：    
+>* mounted (安装之后)
 
 ## 其他知识点
 > 组件之间，参数至今 注意驼峰命名的规则
