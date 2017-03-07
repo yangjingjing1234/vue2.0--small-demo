@@ -81,8 +81,9 @@ npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--sav
 >
 > axios post参数，如果后台接受不到，需要处理一下
 >
-```
+> build文件不再根目录，路径配置
 
+```
 Vue.prototype.$http = axios;
 
 this.$http.post(url, {a: 1, b:2}, {
@@ -96,9 +97,11 @@ this.$http.post(url, {a: 1, b:2}, {
   //参数形式如果后台无法获取，需要处理一下
 var qs = require('qs');
 this.$http.post('/foo', qs.stringify({ 'bar': 123 });
+
 ```
-> build文件不再根目录，路径配置
-> 字符串拼接有2种方式
+
+### 字符串拼接有2种方式
+
 ```
 es5
 this.$http.get('https://www.baidu/10/'+this.page)
@@ -107,8 +110,6 @@ this.$http.get(`https://www.baidu/10/${this.page}`)
 
 ```
 
-
-##
 
 ## Build Setup
 
