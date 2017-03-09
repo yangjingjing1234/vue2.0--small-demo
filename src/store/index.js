@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import actions from './actions.js'
 import mutations from './mutations.js'
+import getters from './getters'
+import cart from './modules/cart'
+import products from './modules/products'
 
 Vue.use(Vuex)
 const  store =new Vuex.Store({
@@ -13,7 +16,12 @@ const  store =new Vuex.Store({
 		user:JSON.parse(sessionStorage.getItem('user'))||{}//这里有用户的信息
 	},
 	mutations,
-	actions
+	actions,
+	getters,
+	modules: {
+	  	cart,
+	  	products
+	}
 })
 
 export default  store 

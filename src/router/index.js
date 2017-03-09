@@ -19,6 +19,7 @@ const signout=r=>require.ensure([],()=>r(require('../components/signout')),'sign
 const user=r=>require.ensure([],()=>r(require('../components/user/user')),'user')
 const nofound=r=>require.ensure([],()=>r(require('../components/404.vue')),'nofound')
 const set=r=>require.ensure([],()=>r(require('../components/set/set.vue')),'set')
+const shopcart = r => require.ensure([], () => r(require('../components/shopcart/shopcart')), 'shopcart')
 
 // const transformchild = r => require.ensure([], () => r(require('../components/transformchild')), 'transformchild')
 
@@ -70,15 +71,18 @@ export default new Router({
           name:'userindex',
           component:user
         },{
-           path:'404',
-          name:'nofound',
-          component:nofound
+          path:'/cart',
+          name:'shopcart',
+          component:shopcart
         },{
           path:'set',
           name:'set',
           component:set,
-        }
-        
+        },{
+           path:'404',
+          name:'nofound',
+          component:nofound
+        } 
       ]
     },{
       name: 'login', 
