@@ -35,9 +35,9 @@ npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--sav
 >
 > 3,Vuex 通过 store 实例会注入到根组件下的所有子组件中，且子组件能通过 this.$store访问到。路由也是同样道理.
 >
-> 4,Actions(处理异步操作,之后commit() ,Mutations 里的函数)
+> 4,Actions(处理异步操作,之后commit() ,Mutations 里的函数),组件中通过dispatch来触发 Actions
 >
-> 5,Mutations(同步处理state),mutation 的 载荷（payload）传入额外的参数,最好是对象形式
+> 5,Mutations(同步处理state),mutation 的 载荷（payload）传入额外的参数,最好是对象形式，组件中通过commit触发mutations
 >
 > 6,getters可以认为是store 的计算属性，当不需要改变state状态，又要获取state的中间状态时调用，比如过滤器，输入框此时的state的值
 >
