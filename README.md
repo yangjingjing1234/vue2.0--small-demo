@@ -124,7 +124,7 @@ npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--sav
 >
 
 ## 其他知识点
-> 1,组件之间，参数至今 注意驼峰命名的规则
+> 1,组件之间，参数之间 注意驼峰命名的规则。<span style="color:red">注：命名首字母如果以下划线开头会不识别，遇到个坑在这里</span>
 >
 > 2,vue方法的理解，过滤器(filters)，计算属性(computed),自定义方法(methods),观察(watch)
 >
