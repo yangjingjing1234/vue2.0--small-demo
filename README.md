@@ -52,7 +52,7 @@ npm install vue-lazyload vue-awesome-swiper vue-infinite-scroll  axios vuex--sav
 //1,mapGetters获得现在数据
 //2,mapState一样可以获得现在数据
 //3,$store一样可以获得现在数据
-//4,mutations中的方法名字可以重名，都会执行，没有覆盖，至于先后顺序我就不知道了。真心官网例子给力,不知道还可以重名使用(碉堡了)。
+//4,mutations中的方法名字可以重名，都会执行，没有覆盖，至于先后顺序我就不知道了。注：还可以重名使用。
  methods: {
     ...mapMutations([
       'increment' // 映射 this.increment() 为 this.$store.commit('increment')
